@@ -1,0 +1,112 @@
+/* Container wrapping image and text */
+.content-container {
+  overflow: hidden; /* Clearfix */
+  padding: 2rem 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Profile picture floated to the left */
+.profile-pic {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  float: left;
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Text content next to image */
+.content-text {
+  overflow: hidden;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .profile-pic {
+    float: none;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    max-width: 250px;
+    display: block;
+  }
+
+  .content-text {
+    overflow: visible;
+  }
+}
+.progress-bar {
+  width: 0;
+  transition: width 1.5s ease-in-out;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14.5px; /* slightly smaller base font */
+}
+
+.platform-card {
+  padding: 18px; /* less padding */
+  max-width: 280px; /* slightly smaller cards */
+}
+
+.platform-icon {
+  font-size: 2.4rem; /* smaller icon */
+  margin-bottom: 12px;
+}
+
+.platform-title {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.platform-desc {
+  font-size: 0.9rem;
+  min-height: 40px;
+  margin-bottom: 12px;
+}
+
+.platform-img {
+  height: 110px; /* smaller image */
+  margin-top: 10px;
+}
+
+.contact-form {
+  max-width: 600px; /* narrower form */
+  padding: 25px 30px; /* less padding */
+}
+
+.contact-form h2 {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+}
+
+.form-label {
+  font-size: 0.9rem;
+}
+
+.form-control {
+  font-size: 0.9rem;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+.btn-send {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+@media (max-width: 767px) {
+  .platform-card {
+    max-width: 90vw;
+  }
+  .contact-form {
+    padding: 20px 15px;
+  }
+}
